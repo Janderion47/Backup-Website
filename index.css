@@ -1,0 +1,111 @@
+body
+{
+  background-color: indigo;
+    margin: 7px
+}
+body:hover {
+  background-color: red;
+  animation-name: bganim;
+  animation-duration: 1s;
+  animation-iteration-count: infinite
+}
+h1
+{
+  color: black;
+  font-family: Arial;
+}
+p {
+    color: black;
+    font-family: Arial;
+    font-size: 14;
+}
+a {
+    color: inherit;
+}
+.myButton {
+	background: linear-gradient(to bottom right, #6600ff 0%, #ff0066 100%);
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: 2px;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom right, #6600ff 50%, #ff0066 100%);
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+#bg_handler {
+  background-image: url(bg_contain.png);
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  padding: 2000px;
+}
+#middle_text {
+    background-color: #FFFFFF;
+    border-radius: 28px;
+    margin: 15px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+tr
+{
+  background-color: #FFFFFF;
+}
+#imagebox{
+  margin:auto;
+  width:auto;
+  height:auto;
+  position:relative; /*sets up for children to be abs pos*/
+}
+.applicant
+{
+  width:256px; /*we now know width of img*/
+  position:absolute;
+  bottom:40px;
+  left:-8px; /*we can calulate 200 - 50 - 100 - 50 = 0 Get it?*/
+}
+img {
+  pointer-events: none;
+}
+
+@keyframes example {
+  0%   {background: linear-gradient(to bottom right, #6600ff 0%, #ff0066 100%);}
+  10%  {background: linear-gradient(to bottom right, #6600ff 10%, #ff0066 100%);}
+  20%  {background: linear-gradient(to bottom right, #6600ff 20%, #ff0066 100%);}
+  30% {background: linear-gradient(to bottom right, #6600ff 30%, #ff0066 100%);}
+  40% {background: linear-gradient(to bottom right, #6600ff 40%, #ff0066 100%);}
+  50% {background: linear-gradient(to bottom right, #6600ff 50%, #ff0066 100%);}
+  60% {background: linear-gradient(to bottom right, #6600ff 40%, #ff0066 100%);}
+  70% {background: linear-gradient(to bottom right, #6600ff 30%, #ff0066 100%);}
+  80%  {background: linear-gradient(to bottom right, #6600ff 20%, #ff0066 100%);}
+  90%  {background: linear-gradient(to bottom right, #6600ff 10%, #ff0066 100%);}
+  100%   {background: linear-gradient(to bottom right, #6600ff 0%, #ff0066 100%);}
+}
+@keyframes bganim{
+0% {background-color: red;}
+15% {background-color: orange;}
+30% {background-color: yellow;}
+45% {background-color: green;}
+60% {background-color: blue;}
+75% {background-color: indigo;}
+90% {background-color: violet;}
+}
