@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Foyer</title>
+		<link rel="stylesheet" href="index.css">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    </head>
+    <body>
+	   
+        <div id="imagebox">
+            <div id="bg_handler">
+                <center>
+                    <script>
+                        function random_bg_color() {
+                            var x = Math.floor(Math.random() * 256);
+                            var y = Math.floor(Math.random() * 256);
+                            var z = Math.floor(Math.random() * 256);
+                            var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+                            console.log(bgColor);
+
+                            document.body.style.background = bgColor;
+                        } random_bg_color();
+                    </script>
+                    <h1>Welcome, you are looking at the foyer of this website.</h1>
+                    <hr style="background-color:blue;border-radius:100px;" size="5" width="800">
+                    <p>Please click on one of the following links to be redirected to that specific part of this website.</p>
+                    <a href='/BlogStuff/' class="myButton">Blog</a>
+                    <a href='/Images/' class="myButton" title="Yeah, it's memes">Images & Potentially Memes</a>
+                    <a href='/Misc/' class="myButton" title="Random Stuff">Miscellaneous</a>
+                    <br><br>
+                </center>
+                
+                <br>
+            </div>
+            <center>
+                <div style="width: 50%;">
+                    <p id="middle_text" title="A rant, in an attempt to reclaim what fallen honor this website has lost.">
+                        Welcome to the constant work in progress, personal project of Jadenpaul Mangune Albay. This will be fun having you all around here. Enjoy the content of mine own life.
+                        <br>Buenvenidos al trabajo en elaboración constante,  un proyecto personal de Jadenpaul de Mangune y Albay. Este será divertido tenerte por aquí. Disfruta del contenido de mi propia vida.
+                        <br><br>If you are here for the USACA Project, <a href="Misc/Projects/USACA/" title="United States Anomolous Containment Agency">Click Here</a>
+                        <br><br>Long live the god himself, the great honorable <a href="https://www.youtube.com/channel/UCnkp4xDOwqqJD7sSM3xdUiQ">Mr. Adam Neely</a> of bass guitar, defgecd, good vibes, and hard work.
+                    </p>
+                </div>
+            </center>
+            <div>
+                <center>
+                    <table cellspacing="15" style="background-color: white;border-radius:20px;">
+                        <tr>
+                        <th>
+                            <iframe src="https://discord.com/widget?id=756283628173918239&theme=dark" width="400px" height="400px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                        </th>
+                        <th>
+                            <iframe src="https://editor.p5js.org/abraramin454/embed/ylWgZsO4M" width="400px" height="400px"></iframe>
+                        </th>
+                    </table>
+                </center>
+                <br><br>
+            </div>
+        </div>
+        <div>
+            <img src="jp.png" alt="jp" class="applicant" style="border-radius: 2px; max-width: 716px;" width="100%">
+        </div>
+        
+    </body>
+</html>
